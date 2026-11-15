@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>AI聊天机器人 | Manical&#39;s Blog</title>
+  <meta name="description" content="目录 什么是AI聊天机器人？ [AI 聊天机器人的工作原理是什么？](#AI 聊天机器人的工作原理是什么？) [为了盈利，企业和公司如何使用 AI 聊天机器人](#为了盈利，企业和公司如何使用 AI 聊天机器人) [客户如何使用 AI 聊天机器人](#客户如何使用 AI 聊天机器人) 公司及企业的员工如何使用聊天机器人 什么是自然语言处理  最近，因为Chat GPT的上市，AI机器人一下子就火了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI聊天机器人">
+<meta property="og:url" content="https://manical-david.github.io/Blog/2023/08/12/AI%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/index.html">
+<meta property="og:site_name" content="Manical&#39;s Blog">
+<meta property="og:description" content="目录 什么是AI聊天机器人？ [AI 聊天机器人的工作原理是什么？](#AI 聊天机器人的工作原理是什么？) [为了盈利，企业和公司如何使用 AI 聊天机器人](#为了盈利，企业和公司如何使用 AI 聊天机器人) [客户如何使用 AI 聊天机器人](#客户如何使用 AI 聊天机器人) 公司及企业的员工如何使用聊天机器人 什么是自然语言处理  最近，因为Chat GPT的上市，AI机器人一下子就火了">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-12T07:50:13.000Z">
+<meta property="article:modified_time" content="2026-07-12T11:31:18.030Z">
+<meta property="article:author" content="Manical David">
+<meta property="article:tag" content="chatbot">
+<meta name="twitter:card" content="summary">
+  <link rel="icon" href="/Blog/images/logo.svg">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-gb-web@latest/lxgwwenkaigb-regular/result.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-gb-web@latest/lxgwwenkaigb-medium/result.css">
+
+  
+  
+  
+    
+<link rel="stylesheet" href="/Blog/css/math.css">
+
+  
+  
+<link rel="stylesheet" href="/Blog/css/style.css">
+
+  
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('warmpaper-theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+  <div class="header-inner">
+    <a class="site-title" href="/Blog/"><img class="site-logo" src="/Blog/images/logo.svg" alt="Logo">Manical&#39;s Blog</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-icon"></span>
+    </button>
+    <nav class="site-nav">
+      
+      
+        <a class="nav-link" data-i18n="nav.home" href="/Blog/">首页</a>
+      
+        <a class="nav-link" data-i18n="nav.archives" href="/Blog/archives">时间轴</a>
+      
+        <a class="nav-link" data-i18n="nav.tags" href="/Blog/tags">标签</a>
+      
+        <a class="nav-link" data-i18n="nav.categories" href="/Blog/categories">分类</a>
+      
+        <a class="nav-link" data-i18n="nav.about" href="/Blog/about">关于</a>
+      
+      <button class="theme-toggle" type="button" aria-label="切换主题" title="切换主题" data-i18n="theme_toggle" data-theme-state="light">
+        <span class="theme-toggle-inner">
+          <span class="theme-toggle-icon theme-toggle-icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+          </span>
+          <span class="theme-toggle-icon theme-toggle-icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </span>
+          <span class="theme-toggle-tooltip" aria-hidden="true">
+            <span class="tooltip-item" data-theme="light">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </span>
+            <span class="tooltip-item" data-theme="dark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </span>
+            <span class="tooltip-underline"></span>
+          </span>
+        </span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <main class="main-content">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">AI聊天机器人</h1>
+    <div class="post-meta">
+      <time datetime="2023-08-12T07:50:13.000Z">2023-08-12</time>
+      
+        <span class="separator">&middot;</span>
+        
+          <a href="/Blog/categories/AI/">AI</a>
+        
+      
+    </div>
+  </header>
+
+  <div class="post-body-wrapper">
+    <div class="post-content">
+      <p><strong>目录</strong></p>
+<p><a href="#%E4%BB%80%E4%B9%88%E6%98%AFAI%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%9F">什么是AI聊天机器人？</a></p>
+<p>[AI 聊天机器人的工作原理是什么？](#AI 聊天机器人的工作原理是什么？)</p>
+<p>[为了盈利，企业和公司如何使用 AI 聊天机器人](#为了盈利，企业和公司如何使用 AI 聊天机器人)</p>
+<p>[客户如何使用 AI 聊天机器人](#客户如何使用 AI 聊天机器人)</p>
+<p><a href="#%E5%85%AC%E5%8F%B8%E5%8F%8A%E4%BC%81%E4%B8%9A%E7%9A%84%E5%91%98%E5%B7%A5%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA">公司及企业的员工如何使用聊天机器人</a></p>
+<p><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86">什么是自然语言处理</a></p>
+<hr>
+<p>最近，因为Chat GPT的上市，AI机器人一下子就火了起来，本作者就将关于聊天机器人的用途及介绍写成了一篇文章。</p>
+<h1>什么是AI聊天机器人？</h1>
+<p>AI 聊天机器人是一种软件应用程序，可以自然的方式参与人类对话。AI 聊天机器人广泛用于各行各业的诸多不同用途。</p>
+<h1>AI 聊天机器人的工作原理是什么？</h1>
+<p>AI 聊天机器人使用自然语言处理 (NLP) 来帮助用户通过文本、图形或语音与 Web 服务或应用进行交互。聊天机器人可以理解自然人类语言、模拟人类对话并运行简单的自动化任务。此外，AI 聊天机器人还利用预测智能和分析技术来了解用户的偏好，并利用了解的这些信息来提供建议和预测需求。</p>
+<p>AI 聊天机器人用于各种渠道，例如消息传递应用、移动应用、网站、电话线路和支持语音的应用。它们可以针对不同目的而开发，无论是仅处理一些简单的命令，还是充当复杂的数字助理和交互式代理。AI 聊天机器人可以是大型应用程序的一部分，也可以完全独立存在。</p>
+<p>阅读本介绍，详细了解 AI 聊天机器人的定义及其工作原理。</p>
+<h3 id="为了盈利，企业和公司如何使用-AI-聊天机器人">为了盈利，企业和公司如何使用 AI 聊天机器人</h3>
+<p>AI 聊天机器人可为公司提供诸多优势。许多公司都使用 AI 聊天机器人作为虚拟代理，它们可以处理客户服务问题或为员工提供支持。总的来说，在客户服务中使用聊天机器人不仅有助于公司改善客户服务，还能降低客户服务成本，从而实现较高的投资回报率 (ROI)。</p>
+<p>使用 AI 聊天机器人还有助于公司缩短销售周期、挖掘更多的潜在客户并提高客户忠诚度。各种公司陆续开始利用聊天机器人和 AI 技术来打造个性化用户体验，从而提高客户的满意度、参与度和转化率。</p>
+<p>除了拥有较高的 ROI 之外，AI 聊天机器人还是一种简单便捷的服务，赢得了消费者和员工的期望和依赖，因而变得越来越普遍。随着企业投资于越来越复杂的技术，并建立起多个消息传递接口，聊天机器人迅速成为客户和员工与所交互的大量信息、系统和应用程序之间的必要桥梁。</p>
+<h3 id="客户如何使用-AI-聊天机器人">客户如何使用 AI 聊天机器人</h3>
+<p>客户也可以从使用 AI 聊天机器人中受益。聊天机器人可以按需为客户提供帮助或客户服务，而且不受限制。当客户与聊天机器人进行交互时，他们可以随时获得问题的答案。此外，他们往往能够获得更轻松的销售体验，并与所交互的品牌建立更加个性化的联系。</p>
+<h3 id="公司及企业的员工如何使用聊天机器人">公司及企业的员工如何使用聊天机器人</h3>
+<p>工作场所中的 AI 聊天机器人也可以使在此工作的员工受益。AI 聊天机器人可用于自动执行简单的任务，从而为员工腾出时间。它们还可以在组织内部用于帮助员工浏览公司的政策、程序、人力资源信息以及其他内部系统和文档。</p>
+<h1>什么是自然语言处理？</h1>
+<p>为了有效地工作，AI 聊天机器人必须能够将人类的语音和语言转换成计算机能够理解的信息。理解、分析和响应人类语音的过程是一个复杂的任务，我们称之为自然语言处理。</p>
+<p>自然语言处理是指聊天机器人使用人工智能来理解大量自然语言数据的整个端到端过程。NLP 的工作原理是：接收人类的文字或语音输入，利用 AI 判断该输入的含义，然后生成并做出适当的回应。自然语言处理使机器人能够以模仿人类对话的方式与人类用户进行交流。</p>
+<p>自然语言处理的工作原理是，将用户输入分解为言语、意图和实体。言语是用户输入聊天机器人的任何短语。将言语输入聊天机器人后，聊天机器人会确定言语的意图，即用户联系聊天机器人的目的。最后，聊天机器人会识别出言语中有助于定义意图细节的实体。实体通常是日期、时间、地点、名称或位置之类的信息，有助于进一步明确用户的意图。</p>
+<h1>AI聊天机器人的工作原理是什么？</h1>
+<p>AI 聊天机器人是用户使用文本、图形或语音以对话方式与之交互的任何应用。聊天机器人有很多不同的类型，但它们的工作方式大同小异。</p>
+<h3 id="第一步">第一步</h3>
+<p>用户通过应用、网站或文本消息之类的渠道，或者甚至通过电话联络来将消息输入 AI 聊天机器人。此消息可以是命令或问题。</p>
+<h3 id="第二步">第二步</h3>
+<p>AI 聊天机器人接收消息的内容，并捕获相关信息，例如传入消息的渠道。然后，聊天机器人使用 NLP 来确定消息的目的并识别相关意图。</p>
+<h3 id="第三步">第三步</h3>
+<p>AI 聊天机器人确定一个适当的响应，并通过相同的渠道将响应返回给用户。随着对话的继续，此流程将继续执行下述第一步至第三步。对话会一直持续，直到用户的疑问得到解答，问题得到解决，或者直到请求被转交给人工代理。</p>
+<h1>有哪些类型的 AI 聊天机器人？</h1>
+<p>企业可以使用的聊天机器人主要有两种类型：事务型聊天机器人和对话型聊天机器人。它们的总体复杂程度不同，使用人工智能的程度也不同。</p>
+<h3 id="事务型聊天机器人">事务型聊天机器人</h3>
+<p>事务型聊天机器人，也称为任务型或声明型聊天机器人，是一种专注于执行或自动执行某项功能的单用途聊天机器人。它使用规则、自然语言处理和极少量的机器学习。事务型聊天机器人基于结构化数据进行训练，旨在根据用户想要执行的操作或想要解决的问题，提供一套固定的选项供用户选择。在用户做出选择后，聊天机器人会提供更多选项来引导他们完成整个流程，直到用户的疑问得到解答或问题得到解决。</p>
+<p>事务型聊天机器人会生成对话式的自动响应。与事务型聊天机器人的交互非常具体且结构化，因此事务型聊天机器人可以很好地帮助那些事先知道客户可能需要获得哪些常见操作或问题相关帮助的企业。例如，餐馆、快递公司和银行使用事务型聊天机器人来处理常见问题，例如关于营业时间的问题，或者帮助客户处理不涉及大量可变因素的简单事务。事务型聊天机器人是最常用的聊天机器人类型，因此相关的例子也是多种多样。</p>
+<h3 id="对话型聊天机器人">对话型聊天机器人</h3>
+<p>对话型聊天机器人是一种比较复杂且交互性较强的 AI 聊天机器人，可以实现更加个性化的交互。它旨在使用<a target="_blank" rel="noopener" href="https://powervirtualagents.microsoft.com/zh-cn/conversational-ai/">对话型 AI</a> 来理解用户消息中的含义，并模拟人类的方式进行响应。对话型聊天机器人使用人工智能、自然语言处理并通过访问知识数据库和其他信息来检测用户的问题和响应中的细微差别，并按照人类的方式给出相关的答案。这些 AI 聊天机器人具有情境感知能力，并使用自然语言理解、自然语言处理和机器学习来逐渐提高智能化水平。</p>
+<p>对话型聊天机器人通常称为虚拟助理或数字助理，它们也会根据每个用户的个人资料和之前的行为，使用预测智能和分析技术提供个性化体验。随着时间的推移，这种类型的 AI 聊天机器人可以了解用户的偏好，并利用了解的这些信息来提供建议和预测需求。对话型聊天机器人广泛用于电子商务公司、在线服务、社交平台、拥有先进的服务型软件 (SaaS) 工具的企业以及提供企业解决方案的企业到企业 (B2B) 公司。</p>
+<h1>AI 聊天机器人有哪些常规用途？</h1>
+<h3 id="客户服务">客户服务</h3>
+<p>AI 聊天机器人可用来创建随时待命的虚拟客户服务代理，促进提高客户满意度。聊天机器人还可以用来提交和确认支持人员的请求，或者为客户执行日常任务。</p>
+<h3 id="人力资源">人力资源</h3>
+<p>AI 聊天机器人可以协助完成人力资源工作，例如帮助员工申报带薪休假或病假、通知员工政策变化，以及帮助员工了解和管理自己的福利。</p>
+<h3 id="财务与会计">财务与会计</h3>
+<p>AI 聊天机器人应用程序可以协助员工提交费用报告、开启采购订单请求，以及更新和跟踪供应商详细信息。</p>
+<h3 id="市场营销">市场营销</h3>
+<p>AI 聊天机器人用于向忠实客户发送针对性优惠、跟踪客户满意度，以及打造个性化体验以保持客户参与度。</p>
+<h3 id="销售">销售</h3>
+<p>AI 聊天机器人可以预先赋予潜在客户资格、为潜在客户提供报价以及开始主动对话，从而为销售人员腾出时间来专注于达成销售。</p>
+<h1>AI 聊天机器人在不同行业的应用情况如何？</h1>
+<p>AI 聊天机器人的广泛应用让各行各业的公司受益颇多。下面提供了几个示例来介绍聊天机器人的日常运用方式：</p>
+<h3 id="电子商务和零售业">电子商务和零售业</h3>
+<p>在线商店使用 AI 聊天机器人作为客户服务代理来提供产品信息、提供个性化产品建议以及处理订单和退货请求。</p>
+<h3 id="金融服务业">金融服务业</h3>
+<p>银行和信用社使用 AI 聊天机器人作为智能代理，帮助回答客户的问题、提供帐户余额和对帐单、处理基本事务，以及提供储蓄和投资建议。</p>
+<h3 id="医疗保健业">医疗保健业</h3>
+<p>医院和诊所使用 AI 聊天机器人来安排预约、提供用药信息以及帮助患者找到最近的办公地点等。</p>
+<h3 id="教育行业">教育行业</h3>
+<p>AI 聊天机器人用于学生反馈、教师评估和行政协助。</p>
+<h3 id="保险业">保险业</h3>
+<p>AI 聊天机器人充当虚拟代理和顾问，可以提交索赔、提供状态更新以及执行其他基本任务，从而为工作人员腾出时间来执行更高级的任务。</p>
+<h3 id="制造业">制造业</h3>
+<p>AI 聊天机器人帮助制造商进行供应商管理和合作、人员协助、工作场所维护、产品召回和人力资源任务。</p>
+<h3 id="旅游业与酒店业">旅游业与酒店业</h3>
+<p>航空公司和酒店公司使用 AI 聊天机器人作为交互式代理，帮助客户进行购票、在线登记和其他旅行安排。</p>
+
+    </div>
+
+    
+        <aside class="toc-sidebar">
+  <div class="toc-wrapper">
+    <h3 class="toc-title">Contents</h3>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BA%86%E7%9B%88%E5%88%A9%EF%BC%8C%E4%BC%81%E4%B8%9A%E5%92%8C%E5%85%AC%E5%8F%B8%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-AI-%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA"><span class="toc-text">为了盈利，企业和公司如何使用 AI 聊天机器人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-AI-%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA"><span class="toc-text">客户如何使用 AI 聊天机器人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AC%E5%8F%B8%E5%8F%8A%E4%BC%81%E4%B8%9A%E7%9A%84%E5%91%98%E5%B7%A5%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA"><span class="toc-text">公司及企业的员工如何使用聊天机器人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5"><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5"><span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E5%9E%8B%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA"><span class="toc-text">事务型聊天机器人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%AF%9D%E5%9E%8B%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA"><span class="toc-text">对话型聊天机器人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1"><span class="toc-text">客户服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90"><span class="toc-text">人力资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A2%E5%8A%A1%E4%B8%8E%E4%BC%9A%E8%AE%A1"><span class="toc-text">财务与会计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80"><span class="toc-text">市场营销</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%80%E5%94%AE"><span class="toc-text">销售</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E5%92%8C%E9%9B%B6%E5%94%AE%E4%B8%9A"><span class="toc-text">电子商务和零售业</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%91%E8%9E%8D%E6%9C%8D%E5%8A%A1%E4%B8%9A"><span class="toc-text">金融服务业</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E4%B8%9A"><span class="toc-text">医疗保健业</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%99%E8%82%B2%E8%A1%8C%E4%B8%9A"><span class="toc-text">教育行业</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E9%99%A9%E4%B8%9A"><span class="toc-text">保险业</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%B6%E9%80%A0%E4%B8%9A"><span class="toc-text">制造业</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%85%E6%B8%B8%E4%B8%9A%E4%B8%8E%E9%85%92%E5%BA%97%E4%B8%9A"><span class="toc-text">旅游业与酒店业</span></a></li></ol>
+  </div>
+</aside>
+
+      
+  </div>
+
+  
+
+  
+
+  <footer class="post-footer">
+    
+      <div class="post-tags">
+        
+          <a href="/Blog/tags/chatbot/">#chatbot</a>
+        
+      </div>
+    
+    <nav class="post-nav">
+      
+        <a class="prev" href="/Blog/2024/08/31/CSP-J-S%E4%BB%A3%E7%A0%81%E9%80%92%E4%BA%A4%E5%8F%8A%E7%BC%96%E5%86%99%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">&laquo; CSP-J/S代码递交及编写注意事项</a>
+      
+      
+        <a class="next" href="/Blog/2023/08/02/%E4%BB%80%E4%B9%88%E6%98%AFAI%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%9F/">AI聊天机器人 &raquo;</a>
+      
+    </nav>
+  </footer>
+
+  
+    
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    options: {
+      // Skip the TOC sidebar and nav so heading math copied into the TOC
+      // isn't typeset a second time.
+      ignoreHtmlClass: 'toc-sidebar|site-nav',
+      enableMenu: false
+    }
+  };
+</script>
+
+<script defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@4.1.2/tex-mml-chtml.js"
+        integrity="sha384-Nfw2UPOp2WaWfAjGXccSL8qKx4KWXN9NUonXtPcotBXKSqHMyNWrahYzDzIXhpTy"
+        crossorigin="anonymous"></script>
+
+  
+</article>
+
+    </main>
+    <footer class="site-footer">
+  <div class="footer-inner">
+    
+      <p>&copy; 2026 Manical David</p>
+    
+    <p>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &middot; Theme <a href="https://github.com/finch-xu/hexo-theme-warmpaper" target="_blank" rel="noopener">Warmpaper</a></p>
+    <div class="lang-switcher">
+      <button class="lang-switch" type="button" data-lang="zh-CN">中文</button>
+      <button class="lang-switch" type="button" data-lang="en">English</button>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+<script src="/Blog/js/main.js"></script>
+
+</body>
+</html>
